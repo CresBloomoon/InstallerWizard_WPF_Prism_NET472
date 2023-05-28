@@ -23,6 +23,9 @@ namespace InstallerWizard
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<WizardInputPage>();
+            containerRegistry.RegisterForNavigation<ConfirmationPage>();
+            containerRegistry.RegisterForNavigation<InstallProgressPage>();
+            containerRegistry.RegisterForNavigation<CompletionPage>();
         }
     }
 }
